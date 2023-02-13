@@ -50,4 +50,28 @@ namespace InheritanceHW
             Console.WriteLine($"Name: {Name} Salary: {Salary} Protects a person: {NameSecurity}");
         }
     }
+
+    class Manager : Worker
+    {
+        public Manager() : base()
+        {}
+        public Manager(string name, double salary) : base(name, salary)
+        {}
+        public override void Print()
+        {
+            Console.WriteLine($"Name: {Name} Salary: {Salary}");
+        }
+    }
+
+    class Engineer : Worker
+    {
+        public Engineer() : base()
+        { }
+        public Engineer(string name, double salary) : base(name, salary)
+        { }
+        public override void Print()
+        {
+            Console.WriteLine($"Name: {Name} Salary: {Salary}");
+        }
+    }
 }

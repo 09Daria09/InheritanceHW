@@ -48,6 +48,20 @@ namespace InheritanceHW
             }
 
             Console.WriteLine();
+            Worker[] workers = new Worker[4];
+
+            workers[0] = new President("Володимир Зеленський", 446000);
+            workers[1] = new Security("Борис Гірн", 100000,"Володимира Зеленського");
+            workers[2] = new Manager("Наташа", 40000);
+            workers[3] = new Engineer("Микола Гріневич",220000);
+
+            for (int i = 0; i < workers.Length; i++)
+            {
+               workers[i].Print();
+                Console.WriteLine("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+            }
+
+            Console.WriteLine();
 
         }
     }
